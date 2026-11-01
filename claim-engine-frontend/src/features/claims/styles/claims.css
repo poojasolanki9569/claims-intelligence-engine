@@ -1,0 +1,186 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f6fa;
+    color: #252525;
+  }
+  
+  /* Page layout */
+  .claims-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  
+  .claims-header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .claims-header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #252525;
+  }
+  
+  .claims-header p {
+    color: #666;
+    font-size: 15px;
+  }
+  
+  .claims-content {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  /* Form section */
+  .form-section,
+  .result-section {
+    background: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+  
+  .form-section h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  
+  /* Form fields */
+  .claim-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-field label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .input-wrapper input,
+  .textarea-wrapper textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d5d5d5;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .input-wrapper input:focus,
+  .textarea-wrapper textarea:focus {
+    border-color: #7b3fe4;
+  }
+  
+  .textarea-wrapper textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+  
+  .field-error {
+    color: #d93025;
+    font-size: 12px;
+    align-items: flex-start;
+  }
+  
+  .api-error {
+    color: #d93025;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  /* Button */
+  .claim-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    background: #7138cc;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .claim-form button:hover:not(:disabled) {
+    background: #5926ad;
+  }
+  
+  .claim-form button:disabled {
+    background: #b9a4d8;
+    cursor: not-allowed;
+  }
+  
+  /* Assessment result */
+  .assessment-result h2 {
+    margin-top: 0;
+  }
+  
+  .result-status,
+  .confidence-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .status-justified {
+    color: #16834a;
+  }
+  
+  .status-not-justified {
+    color: #d93025;
+  }
+  
+  .reasoning {
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  
+  .reasoning h3 {
+    margin-bottom: 8px;
+  }
+  
+  .review-note {
+    margin-top: 20px;
+    padding: 12px;
+    background: #fff8e6;
+    border-radius: 6px;
+    color: #72551b;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    .claims-page {
+      padding: 24px 14px;
+    }
+  
+    .claims-header h1 {
+      font-size: 24px;
+    }
+  
+    .form-section,
+    .result-section {
+      padding: 20px 16px;
+    }
+  }
